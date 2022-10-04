@@ -2,3 +2,29 @@
     padding: 0px;
     margin: 0px;
 }
+
+body {
+    background-color: antiquewhite;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    width: 5%;
+    background-color: rgb(10, 10, 10);
+}
+
+.black {
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.white {
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+}
