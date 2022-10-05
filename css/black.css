@@ -1,0 +1,19 @@
+.black {
+    width: 30%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    margin-top: 8%;
+}
+
+.img-profile {
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 10%;
+    max-width: 400px;
+}
+
+.img-profile>img {
+    width: 100%;
+    box-shadow: -10px 10px white;
+}
