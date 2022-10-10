@@ -9,6 +9,7 @@ body {
 
 main {
     display: flex;
+    flex-direction: row;
 }
 
 header {
@@ -35,7 +36,7 @@ header {
     font-size: clamp(1.5rem, 0.5rem + 1.5vw, 2rem);
 }
 
-ul>li {
+.info>ul>li {
     color: white;
     margin-top: 70px;
     letter-spacing: 5px;
@@ -58,19 +59,26 @@ ul>li {
     }
     .list-icon {
         width: 100%;
+        cursor: pointer;
     }
     .info {
+        display: none;
         width: 100%;
         margin-top: 20px;
     }
-    ul {
+    .info>ul {
         display: flex;
         flex-direction: column;
     }
-    ul>li {
+    .info>ul>li {
         margin-top: 30px;
     }
     ul>li:last-child {
         padding-bottom: 30px;
     }
+}
+
+.active {
+    display: block;
+    transition: all 1s ease;
 }

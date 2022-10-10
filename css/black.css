@@ -1,19 +1,41 @@
-.black {
-    width: 30%;
-    height: 100vh;
-    background-color: black;
-    color: white;
+.main-info {
     margin-top: 8%;
+    width: 80%;
+    display: flex;
+}
+
+.black {
+    width: 25vw;
+    height: 80vh;
+    background-color: black;
+    margin-left: 5%;
+}
+
+.profile {
+    height: 80%;
 }
 
 .img-profile {
-    position: absolute;
-    margin-left: 22%;
-    margin-top: 10%;
-    max-width: 400px;
+    width: 300px;
+    margin-top: 50px;
 }
 
 .img-profile>img {
     width: 100%;
-    box-shadow: -10px 10px white;
+    box-shadow: -10px 10px 1px white;
+}
+
+.icon-profile {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.icon-profile>ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 100px;
+}
+
+.icon-profile>ul>li {
+    margin-left: auto;
 }
