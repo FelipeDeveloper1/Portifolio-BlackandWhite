@@ -12,7 +12,6 @@
 .btn-profile {
     width: 180px;
     height: 60px;
-    margin: 20px;
     line-height: 60px;
     letter-spacing: 2px;
     text-decoration: none;
@@ -22,6 +21,8 @@
     transition: var(--speed-normal);
     border: 1px solid var(--color-red);
     background-color: var(--color-white);
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .btn-profile:hover {
@@ -39,9 +40,14 @@
 }
 
 @media(max-width: 850px) {
+    .main-info {
+        margin-top: 5%;
+        width: 100vw;
+    }
     .profile {
         flex-direction: column;
         width: auto;
+        margin: auto;
     }
     .btns>.btn-profile {
         margin: auto;
@@ -55,15 +61,20 @@
         text-align: center;
     }
     .nav-profile {
-        margin-left: 0px;
-    }
-    .main-info {
-        margin-top: 5%;
-        width: 100vw;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .barrinha {
         height: 4px;
         width: 80%;
-        margin-bottom: 10px;
+        ;
+        margin: auto;
+    }
+}
+
+@media(max-width: 350px) {
+    .black {
+        display: none;
     }
 }

@@ -1,0 +1,22 @@
+.container-sobre {
+    width: 600px;
+    margin: auto;
+    justify-content: justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 80px;
+}
+
+.container-sobre>h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
+}
+
+.container-sobre>p {
+    font-size: clamp(1rem, 0.8rem + 1.3vw, 1.3rem);
+}
