@@ -37,15 +37,20 @@ header {
 }
 
 .info>ul>li {
+    margin-top: 30px;
+}
+
+.info>ul>li>a {
+    font-family: 'Times New Roman', Times, serif;
     color: white;
-    margin-top: 70px;
     letter-spacing: 5px;
     list-style-type: none;
     cursor: pointer;
     transition: all ease 1s;
+    text-decoration: none;
 }
 
-.info>ul>li:hover {
+.info>ul>li>a:hover {
     color: rgb(64, 62, 62);
 }
 
@@ -87,4 +92,9 @@ header {
 .active {
     display: block;
     transition: all 1s ease;
+}
+
+.nav-active {
+    border: 1px solid white;
+    transition: 1.5s;
 }
