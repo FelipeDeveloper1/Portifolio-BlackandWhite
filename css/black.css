@@ -1,6 +1,6 @@
 .main-info {
     margin-top: 8%;
-    width: 80%;
+    width: 80vw;
     display: flex;
 }
 
@@ -12,30 +12,58 @@
 }
 
 .profile {
-    height: 80%;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .img-profile {
     width: 300px;
-    margin-top: 50px;
 }
 
 .img-profile>img {
     width: 100%;
-    box-shadow: -10px 10px 1px white;
+    box-shadow: -30px 15px 1px white;
 }
 
 .icon-profile {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .icon-profile>ul {
     display: flex;
+    width: 100%;
     list-style-type: none;
-    margin-left: 100px;
+    justify-content: center;
 }
 
 .icon-profile>ul>li {
-    margin-left: auto;
+    padding-left: 30px;
+}
+
+.nav-profile {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+
+.nav-profile>p:last-of-type {
+    font-size: clamp(1.5rem, 0.4rem + 1.3vw, 2rem);
+    text-align: center;
+}
+
+.nome {
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(1.8rem, 1rem + 1.9vw, 2.5rem);
+}
+
+.barrinha {
+    width: 5px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: black;
 }

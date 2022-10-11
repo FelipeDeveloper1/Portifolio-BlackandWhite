@@ -1,0 +1,69 @@
+:root {
+    --color-red: #ec1840;
+    --color-purple: #7a18ec;
+    --color-white: #fff;
+    --color-black-1: #111;
+    --color-black-2: #222;
+    --color-black-3: #444;
+    --speed-normal: 0.5s;
+    --speed-fast: 0.8s;
+}
+
+.btn-profile {
+    width: 180px;
+    height: 60px;
+    margin: 20px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-black-1);
+    transition: var(--speed-normal);
+    border: 1px solid var(--color-red);
+    background-color: var(--color-white);
+}
+
+.btn-profile:hover {
+    background-color: var(--color-black-1);
+    color: var(--color-white);
+    animation: animate var(--speed-fast) steps(8) forwards;
+}
+
+.btn-profile:last-of-type {
+    border: 1px solid var(--color-purple);
+}
+
+.btns {
+    display: flex;
+}
+
+@media(max-width: 850px) {
+    .profile {
+        flex-direction: column;
+        width: auto;
+    }
+    .btns>.btn-profile {
+        margin: auto;
+        margin-top: 15px;
+    }
+    .btn-profile {
+        width: 100px;
+        height: 60px;
+        line-height: 60px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .nav-profile {
+        margin-left: 0px;
+    }
+    .main-info {
+        margin-top: 5%;
+        width: 100vw;
+    }
+    .barrinha {
+        height: 4px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
