@@ -1,0 +1,111 @@
+:root {
+    /* generic */
+    --gutterSm: 0.4rem;
+    --gutterMd: 0.8rem;
+    --gutterLg: 1.6rem;
+    --gutterXl: 2.4rem;
+    --gutterXx: 7.2rem;
+    --colorPrimary400: #7e57c2;
+    --colorPrimary600: #5e35b1;
+    --colorPrimary800: #4527a0;
+    --lineHeightSm: 1.1;
+    --lineHeightMd: 1.8;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.container-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.form {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.form>input {
+    height: 6vh;
+    width: 20vw;
+    border-radius: 3px;
+}
+
+#assunto {
+    width: 41vw;
+}
+
+#mensagem {
+    width: 41vw;
+    height: 15vh;
+}
+
+#enviar {
+    margin-top: 20px;
+    width: 21vw;
+    height: 60px;
+    border: 8px;
+}
+
+@media(max-width: 850px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .form>input {
+        width: 35vw;
+    }
+    #assunto {
+        width: 70vw;
+    }
+    #mensagem {
+        width: 70vw;
+    }
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.default {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.default>p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
+}
+
+.default>a>input {
+    margin-top: 20px;
+    width: 15vw;
+    height: 5vh;
+    font-size: clamp(1rem, 0.5rem + 1.5vw, 2rem);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
