@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-box {
+    margin-right: 100px;
+    width: 20vw;
+    height: 33vh;
+    border: 1px solid white;
+}
+
+.first-row {
+    display: flex;
+}
+
+.second-row {
+    margin-top: 70px;
+    display: flex;
+}
